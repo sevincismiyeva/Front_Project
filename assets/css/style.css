@@ -250,3 +250,66 @@ a{
     padding-right: 27%;
     border: none;
 }
+
+
+#shopbcat{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.shopbycategory{
+    margin-bottom: 5%;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.cards img{
+    width: 438px;
+    height: 266px;
+}
+
+.card1{
+    position: relative;
+}
+
+.cardp1{
+    font-size: 26px;
+    font-family: "Playfair Display", serif;
+}
+
+.cardp2{
+    font-size: 23px;
+    font-family: "Yellowtail", cursive;
+    font-weight: bold;
+    color: #0071fe;
+    text-shadow: 2px -2px white;
+}
+
+.card_btn{
+    background-color: #ffce25;
+    padding: 13px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.sbc_text{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+@media (max-width:768px){
+    .cards{
+        flex-direction: column;
+    }
+}

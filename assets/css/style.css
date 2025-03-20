@@ -313,3 +313,107 @@ a{
         flex-direction: column;
     }
 }
+
+
+#latestproducts{
+    margin-bottom: 10%;
+}
+.latest_products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+hr{
+    color: #8f8f96;
+    width: 70%;  
+    margin: 0 auto;  
+}
+.latest_products h2{
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+}
+.latest_list{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.latest_list li{
+    color: #8f8f96;
+}
+.latest_list li:nth-child(1){
+    color: red;
+}
+
+
+.picturesort {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 18%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.sort-card {
+    width: 26%;
+    padding: 15px;
+}
+.sort-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.sort-card p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    color: #383838;
+    cursor: pointer;
+}
+.sort-card p:hover{
+    color: red;
+}
+
+.sort-card i{
+    padding-top: 10%;
+}
+
+.sort-card span{
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.price2{
+    color: red;
+    text-decoration: line-through;
+}
+
+.sale p{
+    position: absolute;
+    
+    background-color: red;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    padding: 7px 17px;
+    border-radius: 15px;
+}
+
+.staricon{
+    color: orange;
+}
+
+@media (max-width:768px){
+    .latestproducts{
+        flex-direction: column;
+    }
+}
+
+
+

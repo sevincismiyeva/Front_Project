@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#p_list{
+    margin-top: 100px;
+}
+#nav_area {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: white; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Kölgə effekti */
+    z-index: 1000; 
+    padding: 10px 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.navbar_right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav_icon1{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    cursor: pointer;
+}
+
+.nav_icon1 span{
+    position: absolute;
+    top: 0;
+    right: 1px;
+    border: none;
+    background-color: #00b1f4;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.nav_icon2{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_icon2 span{
+    position: absolute;
+    top: 0;
+    left: 48px;
+    border: none;
+    background-color: #00b1f4;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.nav_list{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav_list li a:hover{
+    color: red;
+}
+
+.hot{
+    position: relative;
+}
+
+.hot span{
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    background-color: red;
+    border-radius: 30%;
+    width: 35px;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1 input{
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 12px 20px;
+}
+
+.btn1{
+    position: relative;
+}
+
+.btn1 i{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.btn2 button{
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 30px;
+    background-color: #2577fd;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.btn2 button{
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 30px;
+    background-color: #2577fd;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.btn2 button:hover{
+    background-color: #00b1f4;
+}
+
+.burger{
+    display: none;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+@media (max-width:1024px){
+    .btn1,
+    .nav_icon1{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .burger{
+        display: block;
+    }
+    .nav,
+    .navbar_right{
+        display: none;
+    }
+}
+
+
+.navbar ul li {
+    position: relative;
+}
+
+/* Dropdown menyunu gizlət */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    min-width: 150px;
+    border-top: 3px solid red;
+    
+}
+
+/* Dropdown içindəki linklər */
+.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+}
+
+/* Hover edəndə menyunu göstər */
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+
+
+#p_list .img{
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/hero/category.jpg);
+    height: 300px;
+    background-size: cover;
+    text-align: center;
+}
+.product_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+#dropdown{
+    padding: 200px 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.keyword{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.keyword input{
+    background-color: #F4EDF2;
+    border-radius: 50px;
+    border: none;
+    padding: 13px 25px;
+    width: 360px;
+    line-height: 22px;
+    color: #795376;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.keyword i{
+    position: absolute;
+    top:17px;
+    left: 90%;
+}
+
+.select1{
+    background-color: #F4EDF2;
+    border-radius: 50px;
+    border: none;
+    padding: 13px 25px;
+    width: 360px;
+    margin-top: 20px;
+}
+.select1 select{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    color: #795376;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+.select1 option{
+    background-color: #F4EDF2;
+    border-radius: 50px;
+    border: none;
+    padding: 13px 25px;
+    width: 360px;
+    margin-top: 20px;
+}
+.select_img{
+    display: flex;
+    gap: 30px;
+}
+.select_right{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.img1 h3{
+    font-family: "Poppins", sans-serif;
+    color: #191d34;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.img1 h3:hover{
+    color: #2577fd;
+}
+.img1 p{
+    color: #506172;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+}
+
+.load_more button{
+    padding: 18px 36px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #2577fd;
+    font-size: 15px;
+    font-weight: 400;
+    color: #2577fd;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.load_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 30%;
+}
+.load_more button:hover{
+    color: white;
+    background-color: #2577fd;
+}
+
+#purple{
+    background-color: #b08ead;
+    height: 493.7px;
+}
+.mickymouse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10%;
+    text-align: center;
+    
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.total h3{
+    white-space: pre-line;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.total p{
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+}
+
+.angle i{
+    background-color: white;
+    color: #828bb2;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.angle i:hover{
+    color: white;
+    background-color: #828bb2;
+    transition: 0.5s;
+}
+.circleimg{
+    position: relative;
+}
+.circleimg i{
+    background-color: #edd3df;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding-top: 15px;
+    position: absolute;
+    top: 70px;
+    right: 270px;
+}
+@media (max-width:1024px){
+    .angle{
+        display: none;
+    }
+}
+@media (max-width:768px){
+    .circleimg i{
+        display: none;
+    }
+}
+
+
+.ikonlar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 13%;
+    margin-top: 13%;
+    
+}
+
+.ikon1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ikon1 i{
+    font-size: 40px;
+    color: #282828;
+}
+.ikon1 h3{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #282828;
+}
+
+.ikon1 p{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #506172;
+    line-height: 30px;
+}
+
+#get{
+    background-color: #191d34;
+    height: 408.6px;
+    color: white;
+}
+.updates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    gap: 30px;
+}
+.updates p{
+    white-space: pre-line;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.updates h2{
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+}
+.inpt_btn{
+    position: relative;
+}
+.inpt_btn input{
+    width: 558px;
+    height: 59.6px;
+    padding: 19px 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.inpt_btn input::placeholder{
+    color: white;
+}
+.inpt_btn button{
+    width: 138.32px;
+    height: 49.2px;
+    padding: 15px 30px;
+    background-color: #2577fd;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.inpt_btn button:hover{
+    color: #2577fd;
+    border: 1px solid #2577fd;
+    background-color: white;
+}
+
+@media (max-width:768px){
+    .inpt_btn input{
+        width: 279px;
+    }
+    .inpt_btn button{
+        width: 50px;
+        padding-right: 100px;
+    }
+}
+
+/* footer */
+
+footer {
+    padding: 40px 10%;
+    font-family: "Poppins", sans-serif;
+    color: #868c96;
+    margin: 5% 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-section p{
+    white-space: pre-line;
+}
+.footer-section img {
+    width: 102px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.social-icons i {
+    margin: 0 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+

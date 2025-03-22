@@ -685,16 +685,6 @@ hr{
 
 
 
-    
-
-
-
-
-
-
-
-
-
 .newsletter {
     background-color: #e6f3ff; /* Açıq mavi fon */
     height: 400px;
@@ -818,7 +808,7 @@ footer {
     padding: 40px 10%;
     font-family: "Poppins", sans-serif;
     color: #868c96;
-    margin: 10% 0;
+    margin: 5% 0;
 }
 
 .footer-container {

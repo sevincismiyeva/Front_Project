@@ -93,6 +93,7 @@ a{
     color: black;
 }
 
+
 .nav_list li a:hover{
     color: red;
 }
@@ -194,11 +195,11 @@ a{
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 20px;
     left: 0;
     background-color: white;
     list-style: none;
-    min-width: 120px;
+    min-width: 150px;
     border-top: 3px solid red;
     
 }
@@ -680,3 +681,126 @@ hr{
         font-size: 14px;
     }
 }
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+.newsletter {
+    background-color: #e6f3ff; /* Açıq mavi fon */
+    height: 400px;
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.text-content h2 {
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+}
+
+.text-content p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #373b41;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input {
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 300px;
+}
+
+.input-group button {
+    background-color: #2577fd;
+    color: white;
+    border: none;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .input-group {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+}
+
+
+.ikonlar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 13%;
+}
+
+.ikon1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ikon1 i{
+    font-size: 40px;
+    color: #282828;
+}
+.ikon1 h3{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #282828;
+}
+
+.ikon1 p{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #506172;
+    line-height: 30px;
+}
+

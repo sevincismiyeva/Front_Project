@@ -257,6 +257,7 @@ form{
     font-size: 27px;
     margin-bottom: 20px;
     color: #0b1c39;
+    font-family: "Playfair Display", serif;
 }
 .same{
     display: flex;
@@ -267,6 +268,7 @@ form{
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: "Playfair Display", serif;
 }
 textarea{
     height: 205px;
@@ -288,6 +290,7 @@ textarea{
     background-color: #2577fd;
     width: 102px;
     letter-spacing: 3px;
+    font-family: "Playfair Display", serif;
 }
 
 .send:hover {

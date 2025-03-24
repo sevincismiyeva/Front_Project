@@ -239,6 +239,12 @@ a{
     margin: 0 auto;
     max-width: 1200px;
 }
+
+.blog{
+    display: flex;
+    gap: 30px;
+    margin-top: 10%;
+}
 .travel_com{
     display: flex;
     align-items: center;
@@ -246,7 +252,7 @@ a{
     font-size: 15px;
     color: #999999;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .travel_com p:hover{
     color: red;
@@ -259,14 +265,11 @@ a{
     height: 15px;
 }
 .left1{
-    width: 750px;
-    height: 624.8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
 }
 .blog_content{
-    margin-left: 30px;
-    margin-top: 50px;
+    border-bottom: 1px solid #f0e9ff;
+    padding-bottom: 15px;
 }
 .blog_content h2 {
     color: #0b1c39;
@@ -283,36 +286,106 @@ a{
     color: #506172;
     font-size: 16px;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: normal;
+    text-align: justify;
 }
-.january {
-    background-color: #ff003c;
-    width: 93.24px;
-    height: 92px;
-    padding: 13px 30px;
-    color: white;
-    font-size: 30px;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-    border-radius: 5px;
-    position: absolute;
-    left: 35px;
-    bottom: -15px;
+.blog_content_p1 {
+    font-family: "Poppins", sans-serif;
+    color: #888888;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 25px 25px 25px 30px;
+    border-left: 2px solid rgb(143, 143, 143);
+    font-weight: normal;
+    text-align: justify;
+    background-color: white;
+    width: 690px;
+    height: 188.63px;
 }
-.blog_img {
-    position: relative;
-}
-.january:hover{
-    color: red;
-    background: transparent;
+.bcp{
+    background-color: #828bb21a;
+    margin: 25px 0px;
+    padding: 30px;
+    width: 750px;
+    height: 248.63px;
 }
 
-.blog{
+.left_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+.ip{
+    display: flex;
+    gap: 15px;
+    color: #506172;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+.left_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.img_p{
+    display: flex;
+}
+.img_p p{
+    margin-left: 30px;
+    color: #506172;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.imgg2 p{
+    margin-right: 30px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+    color: rgb(177, 177, 177);
+    font-size: 14px;
+}
+.left_bottom{
+    border-bottom: 1px solid #f0e9ff;
+    padding-bottom: 15px; 
+}
+
+.harvard{
     display: flex;
     gap: 30px;
-    margin-top: 10%;
+    width: 810px;
+    height: 170px;
+    background-color: #fbf9ff;
+    margin: 50px 0px 0px;
+    padding: 40px 30px;
+    color: #212529;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }
+
+.comment_img{
+    display: flex;
+    gap: 30px;
+    padding: 0px 0px 48px;
+    font-family: "Poppins", sans-serif;
+    
+}
+.comment_img img{
+    width: 70px;
+    height: 70px;
+}
+.twop{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+
+
 
 .blog_right{
     display: flex;
@@ -521,27 +594,63 @@ a{
     border: none;
 }
 
-.range span{
-    width: 45px;
-    height: 45px;
-    background-color: white;
-    border: 1px solid #999999;
-    margin: 0px 10px 0px 0px;
-    color: #8a8a8a;
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    padding-top: 12px;
-    cursor: pointer;
-}
-.range span:hover{
-    color: red;
-}
-.range{
+
+
+form{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
+    flex-direction: column;
+    gap: 20px;
+}
+.getintouch{
+    display: flex;
+    margin-left: 150px;
+    gap: 50px;
+    margin-bottom: 10%;
+}
+
+.touch_left h2 {
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    color: #0b1c39;
+    margin: 0px 0px 40px;
+}
+.same{
+    display: flex;
+    gap: 10px;
+}
+.touch_left textarea, input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Playfair Display", serif;
+}
+textarea{
+    height: 205px;
+    width: 730px;
+}
+.touch_left input{
+    width: 360px;
+    height: 48px;
+}
+.send{
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 12px ;
+    border: 0.1px solid #ff003c;
+    text-transform: uppercase;
+    background-color: #2577fd;
+    width: 199.21px;
+    letter-spacing: 3px;
+    font-family: "Playfair Display", serif;
+}
+
+.send:hover {
+    background: #ffffff;
+    color: black;
 }
 
 

@@ -136,7 +136,9 @@ a{
     right: 10px;
     top: 12px;
 }
-
+.btn2 button a{
+    font-family: "Poppins", sans-serif;
+}
 .btn2 button{
     border-radius: 25px;
     background-color: transparent;
@@ -697,7 +699,12 @@ footer {
     margin-bottom: 20px;
     cursor: pointer;
 }
-
+.footer-section ul li:hover{
+    color: #0071fe;
+}
+.social-icons i:hover{
+    color: #0071fe;
+}
 .footer-bottom {
     display: flex;
     justify-content: space-between;

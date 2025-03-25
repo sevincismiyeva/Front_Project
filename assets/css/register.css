@@ -136,9 +136,7 @@ a{
     right: 10px;
     top: 12px;
 }
-.btn2 button a{
-    font-family: "Poppins", sans-serif;
-}
+
 .btn2 button{
     border-radius: 25px;
     background-color: transparent;
@@ -149,7 +147,9 @@ a{
     border: none;
     font-size: 18px;
 }
-
+.btn2 button a{
+    font-family: "Poppins", sans-serif;
+}
 .btn2 button{
     border-radius: 25px;
     background-color: transparent;
@@ -237,6 +237,7 @@ a{
 }
 
 
+
 .container{
     margin: 0 auto;
     max-width: 1300px;
@@ -246,6 +247,8 @@ a{
     justify-content: space-around;
     align-items: center;
     margin-top: 15%;
+    box-shadow: 0px 4px 10px rgba(223, 7, 216, 0.1);
+    height: 100vh;
 }
 .login_left p{
     white-space: pre-line;
@@ -305,6 +308,8 @@ a{
     margin: 30px 0px 17px;
     width: 415px;
     height: 60.1px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
 }
 .login_btn1:hover{
     color: white;

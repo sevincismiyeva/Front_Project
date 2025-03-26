@@ -257,7 +257,16 @@ a{
     padding-right: 27%;
     border: none;
 }
-
+@media (max-width:768px){
+    #main{
+        background-image: none;
+        width: 550px;
+    }
+    .text{ 
+    padding-left: 0;
+    height: 80%;
+    }
+}
 
 #shopbcat{
     margin-top: 10%;
@@ -419,18 +428,27 @@ hr{
 @media (max-width:768px){
     .latestproducts{
         flex-direction: column;
+        
     }
     .latest_products h2{
-        font-size: 15px;
+        font-size: 35px;
+    }
+    .latest_products{
+        display: block;
     }
     .latest_list{
         width: 50%;
+        margin-top: 5%;
+        align-items: center;
     }
     .picturesort{
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         width: 500px;
+    }
+    .sort-card{
+        width: 80%;
     }
 }
 
@@ -475,14 +493,7 @@ hr{
 
 
 
-@media (max-width: 1024px) {
-    .man_text {
-        text-align: center;
-        left: auto;
-        top: auto;
-    }
-    
-}
+
 
 @media (max-width: 768px) {
     #man_section {
@@ -492,27 +503,22 @@ hr{
     }
 
     .man_img {
-        left: auto;
-        text-align: center;
+        display: none;
     }
 
     .man_text {
-        text-align: center;
+    top: 50px;
+    left: 50px;
     }
-
+    .man_text h2{
+        font-size: 25px;
+    }
     .m_tshirt {
         display: none; 
     }
-}
-
-@media (max-width: 480px) {
-    .man_text h2 {
-        font-size: 28px;
-    }
-
-    .btn2 button {
-        font-size: 16px;
-        padding: 8px 16px;
+    .bg-color{
+        width: 500px;
+        margin-left: 0;
     }
 }
 
@@ -580,122 +586,17 @@ hr{
     font-size: 16px;
 } 
 
-
-@media (max-width: 1024px) {
-    #best_collection {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .left-text, .right-text {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .middle_img img {
-        max-width: 220px;
-    }
-
-    .text_img {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        max-width: 200px;
-    }
-
-    .text_img p {
-        font-size: 14px;
-    }
-}
-
 @media (max-width: 768px) {
-    .left-text h2 {
-        font-size: 32px;
+    .left-text img{
+        display: none;
     }
-
-    .left-text p {
-        font-size: 16px;
+    .middle_img img{
+        display: none;
     }
-
-    .btn2 button {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    .middle_img img {
-        max-width: 180px;
-    }
-
-    .text_img img {
-        width: 90px;
+    .left-text{
+        margin-left: 10%;
     }
 }
-
-@media (max-width: 480px) {
-    .left-text h2 {
-        font-size: 28px;
-    }
-
-    .left-text p {
-        font-size: 14px;
-    }
-
-    .btn2 button {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-
-    .middle_img img {
-        max-width: 150px;
-    }
-
-    .text_img img {
-        width: 80px;
-    }
-
-    .jacket2 p {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-}
-
-
-
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
-    #best_collection {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .left-text, .right-text {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .middle_img img {
-        max-width: 220px;
-    }
-
-    .text_img {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        max-width: 200px;
-    }
-
-    .text_img p {
-        font-size: 14px;
-    }
-}
-
-
-
 
 .newsletter {
     background-color: #e6f3ff; 
